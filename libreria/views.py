@@ -9,3 +9,6 @@ def index(request):
 
 def books(request):
     return render(request, 'books/index.html')
+
+def create_book(request):
+    return render(request, 'books/create.html')
