@@ -1,9 +1,6 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 # Create your views here.
-
-
 def index(request):
     return render(request, 'pages/index.html')
 
@@ -12,3 +9,6 @@ def books(request):
 
 def create_book(request):
     return render(request, 'books/create.html')
+
+def edit_book(request):
+    return render(request, 'books/edit.html')
