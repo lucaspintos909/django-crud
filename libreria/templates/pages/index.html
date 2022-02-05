@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Inicio{% endblock title %}
+
+{% block content %}
+<div class="jumbotron">
+  <h1 class="display-4">Bienvenido a la libreria!</h1>
+  <p class="lead">Puedes empezar a ingresar libros.</p>
+  <hr class="my-4">
+  <p>{% lorem %}</p>
+  <a class="btn btn-primary btn-lg" href="{% url 'books' %}" role="button">Sección de Libros</a>
+</div>
+{% endblock content %}
