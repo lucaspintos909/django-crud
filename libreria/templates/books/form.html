@@ -6,7 +6,7 @@
       
       {% if field.field.widget.input_type == 'file' %}
         <br>
-        <img src="{{field.value.url}}" alt="" width="200">
+        <img class="mb-2" src="{{field.value.url}}" alt="" width="200">
       {% endif %}
       <input
         type="{{field.field.widget.input_type}}"
