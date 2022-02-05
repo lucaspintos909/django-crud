@@ -3,12 +3,17 @@
   {% for field in form %}
     <div class="mb-3">
       <label for="" class="form-label">{{field.label}}</label>
+      
+      {% if field.field.widget.input_type == 'file' %}
+        <br>
+        <img src="{{field.value.url}}" alt="" width="200">
+      {% endif %}
       <input
         type="{{field.field.widget.input_type}}"
         class="form-control"
         name="{{field.name}}"
         id=""
-        value="{{field.value | default: ''}}"
+        value="{{field.value | default:''}}"
         placeholder="{{field.label}} del libro"
       />
       <div class="text-danger text-decoration-none">
