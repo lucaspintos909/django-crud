@@ -9,6 +9,7 @@ db = "docker-compose -f docker-compose-dev-db.yml up"
 
 [packages]
 django = "*"
+pymysql = "*"
 
 [dev-packages]
 
