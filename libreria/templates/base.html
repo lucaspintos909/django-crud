@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{% block title %} {% endblock title %}</title>
+    <title>{% block title %} {% endblock title %} | Libreria</title>
 
     <link
       rel="stylesheet"
@@ -30,14 +30,14 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link active" href="#"
-            >Home <span class="sr-only">(current)</span></a
+          <a class="nav-link active" href="{% url 'index' %}"
+            >Inicio <span class="sr-only">(current)</span></a
           >
-          <a class="nav-link" href="#">Nosotros</a>
+          <a class="nav-link" href="{% url 'books' %}">Libros</a>
         </div>
       </div>
     </nav>
-    <main class="container">{% block content %} {% endblock content %}</main>
+    <main class="container mt-5">{% block content %} {% endblock content %}</main>
 
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
