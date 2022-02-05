@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[scripts]
+dev = "python manage.py runserver"
+db = "docker-compose -f docker-compose-dev-db.yml up"
+
+[packages]
+django = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
