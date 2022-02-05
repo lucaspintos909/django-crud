@@ -2,10 +2,13 @@
 {% block content %}
 
 <div class="card">
-  {% comment %} <div class="card-header">
-  </div> {% endcomment %}
+  <div class="card-header">
+    <h2 class="card-title text-center m-0">Lista de libros</h2>
+  </div>
   <div class="card-body">
-    <h2 class="card-title text-center">Lista de libros</h2>
+    <div class="d-flex justify-content-end mb-2">
+      <a type="button" class="btn btn-success" href="{% url 'create_book' %}">Ingresar libro</a>
+    </div>
     <table class="table">
       <thead>
         <tr>
