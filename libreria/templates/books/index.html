@@ -1,0 +1,32 @@
+{% extends 'base.html' %} {% block title %}Libros{% endblock title %} 
+{% block content %}
+
+<div class="card">
+  {% comment %} <div class="card-header">
+  </div> {% endcomment %}
+  <div class="card-body">
+    <h2 class="card-title text-center">Lista de libros</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Titulo</th>
+          <th scope="col">Imagen</th>
+          <th scope="col">Descripción</th>
+          <th scope="col">Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>0</td>
+          <td>Django handbook</td>
+          <td>Imagen</td>
+          <td>Consejos sobre el framework de Python Django</td>
+          <td>Editar | Borrar</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+{% endblock content %}
