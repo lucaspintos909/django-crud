@@ -24,7 +24,7 @@
                 <p class="card-text">{{book.description}}</p>
               </div>
               <div class="d-flex justify-content-end">
-                <a name="" id="" class="btn btn-sm btn-link" href="{% url 'edit_book' %}" role="button">Editar</a>
+                <a name="" id="" class="btn btn-sm btn-link mr-2" href="{% url 'edit_book' book.id %}" role="button">Editar</a>
                 <a name="" id="" class="btn btn-sm btn-danger" href="{% url 'delete_book' book.id %}" role="button">Borrar</a>
               </div>
             </div>
