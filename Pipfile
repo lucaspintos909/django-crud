@@ -11,6 +11,7 @@ db = "docker-compose -f docker-compose-dev-db.yml up"
 django = "*"
 pymysql = "*"
 pillow = "*"
+django-environ = "*"
 
 [dev-packages]
 
